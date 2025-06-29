@@ -127,7 +127,7 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
                 <div className="text-neutral/80">
-                  <p>Caracas, Venezuela</p>
+                  <p>Barcelona, España</p>
                   <p className="text-sm">Atendemos en todo el país</p>
                 </div>
               </div>

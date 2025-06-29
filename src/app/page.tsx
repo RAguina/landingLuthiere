@@ -47,11 +47,11 @@ const structuredData = {
   "name": "Luthier de Cuatros",
   "description": "Luthier especializado en cuatros españoles artesanales",
   "url": "https://tudominio.com",
-  "telephone": "+58-414-123-4567",
+  "telephone": "+34-414-123-456",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "VE",
-    "addressLocality": "Caracas"
+    "addressCountry": "SP",
+    "addressLocality": "Barcelona"
   },
   "geo": {
     "@type": "GeoCoordinates",
