@@ -135,7 +135,7 @@ export interface Testimonial {
 // ===========================
 // TIPOS DE API RESPONSES
 // ===========================
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T = unknown> {
   success: boolean
   data?: T
   message?: string
@@ -185,7 +185,7 @@ export interface UseLocalStorageReturn<T> {
 // ===========================
 // TIPOS DE EVENTOS
 // ===========================
-export interface FormSubmitEvent<T = any> {
+export interface FormSubmitEvent<T = unknown> {
   data: T
   isValid: boolean
   errors?: Record<string, string>
@@ -199,7 +199,7 @@ declare global {
     gtag?: (
       command: 'config' | 'event',
       targetId: string,
-      config?: Record<string, any>
+      config?: Record<string, unknown>
     ) => void
   }
 }

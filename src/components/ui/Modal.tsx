@@ -3,6 +3,7 @@
 
 import React, { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
+import Image from 'next/image'
 import { X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Button } from './Button'
@@ -170,12 +171,14 @@ export function ImageModal({
       className="max-h-[90vh] overflow-hidden"
     >
       <div className="space-y-4">
-        <div className="relative">
-          <img
+        <div className="relative w-full h-[60vh]">
+          <Image
             src={src}
             alt={alt}
-            className="w-full h-auto max-h-[60vh] object-contain rounded-lg"
+            fill
+            className="object-contain rounded-lg"
             loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
           />
         </div>
         

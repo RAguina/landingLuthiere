@@ -9,7 +9,7 @@ import { Mail, Phone, MapPin, Clock, CheckCircle, AlertCircle, Send } from 'luci
 import { Button } from './ui/Button'
 import { Input, Textarea, Select } from './ui/Input'
 import { cn } from '@/lib/utils'
-import type { ContactFormData } from '@/types'
+// Removed unused import: ContactFormData
 
 // Validation Schema
 const contactSchema = z.object({
