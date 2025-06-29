@@ -1,4 +1,6 @@
 // src/components/Footer.tsx
+'use client' // 🔧 AÑADIDO: Client Component para usar onClick
+
 import Link from 'next/link'
 import { Music, Instagram, Facebook, Mail, Phone, MapPin } from 'lucide-react'
 
