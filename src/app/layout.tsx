@@ -2,7 +2,7 @@
 import { ThemeProvider } from 'next-themes'
 import { Inter, Lora } from 'next/font/google'
 import { Metadata } from 'next'
-import './styles/globals.css'
+import '../styles/globals.css'
 
 const inter = Inter({ 
   subsets: ['latin'], 
