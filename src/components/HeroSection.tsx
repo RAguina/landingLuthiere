@@ -9,7 +9,7 @@ const features = [
   {
     icon: Music,
     title: 'Artesanía Tradicional',
-    description: 'Técnicas ancestrales'
+    description: 'Técnicas tradicionales españolas'
   },
   {
     icon: Award,
@@ -42,15 +42,15 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-cuatro.jpg" // Asegúrate de tener esta imagen
-          alt="Cuatro artesanal"
+          src="/images/hero-cuatro.jpg" 
+          alt="Guitarra artesanal"
           fill
           className="object-cover"
           priority
           placeholder="blur"
           blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral/90 via-neutral/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
       </div>
 
       {/* Content */}
@@ -60,14 +60,14 @@ export function HeroSection() {
           <div className={`space-y-8 transition-all duration-1000 ${isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-tight">
-                <span className="text-primary">Cuatros</span>
+                <span className="text-white drop-shadow-lg">Guitarras</span>
                 <br />
-                <span className="text-accent">Artesanales</span>
+                <span className="text-accent drop-shadow-lg">Artesanales</span>
               </h1>
               
-              <p className="text-xl lg:text-2xl text-primary/80 max-w-2xl leading-relaxed">
-                Instrumentos únicos creados con técnicas tradicionales. 
-                Cada cuatro cuenta una historia de pasión y dedicación artesanal.
+              <p className="text-xl lg:text-2xl text-white/90 max-w-2xl leading-relaxed drop-shadow-md">
+                Instrumentos únicos creados con técnicas tradicionales españolas. 
+                Cada guitarra cuenta una historia de pasión y dedicación artesanal.
               </p>
             </div>
 
@@ -75,13 +75,13 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => document.querySelector('#gallery')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn text-lg px-8 py-4"
+                className="btn text-lg px-8 py-4 bg-primary text-neutral hover:bg-secondary hover:text-dark shadow-lg"
               >
                 Ver Galería
               </button>
               <button 
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="btn bg-secondary text-dark hover:bg-accent hover:text-neutral text-lg px-8 py-4"
+                className="btn bg-accent text-neutral hover:bg-secondary hover:text-dark text-lg px-8 py-4 shadow-lg"
               >
                 Solicitar Presupuesto
               </button>
@@ -96,37 +96,37 @@ export function HeroSection() {
                     isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'
                   }`}
                 >
-                  <feature.icon className="w-8 h-8 mx-auto text-accent" />
-                  <h3 className="font-semibold text-primary">{feature.title}</h3>
-                  <p className="text-sm text-primary/70">{feature.description}</p>
+                  <feature.icon className="w-8 h-8 mx-auto text-accent drop-shadow-lg" />
+                  <h3 className="font-semibold text-white drop-shadow-md">{feature.title}</h3>
+                  <p className="text-sm text-white/80 drop-shadow-sm">{feature.description}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Image/Visual Element (opcional) */}
+          {/* Image/Visual Element */}
           <div className={`hidden lg:block transition-all duration-1200 delay-300 ${isLoaded ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <div className="relative">
-              <div className="card bg-neutral/50 backdrop-blur-sm p-8 space-y-4">
-                <h3 className="text-2xl font-serif font-bold text-primary">
-                  ¿Por qué elegir un cuatro artesanal?
+              <div className="card bg-white/10 backdrop-blur-md border border-white/20 p-8 space-y-4 shadow-2xl">
+                <h3 className="text-2xl font-serif font-bold text-white drop-shadow-md">
+                  ¿Por qué elegir una guitarra artesanal?
                 </h3>
-                <ul className="space-y-3 text-primary/80">
+                <ul className="space-y-3 text-white/90">
                   <li className="flex items-start space-x-2">
-                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Sonido único y resonancia natural</span>
+                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 shadow-sm"></span>
+                    <span className="drop-shadow-sm">Sonido único y resonancia natural</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Maderas seleccionadas por su calidad</span>
+                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 shadow-sm"></span>
+                    <span className="drop-shadow-sm">Maderas seleccionadas por su calidad</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Acabado y detalles personalizados</span>
+                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 shadow-sm"></span>
+                    <span className="drop-shadow-sm">Acabado y detalles personalizados</span>
                   </li>
                   <li className="flex items-start space-x-2">
-                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Tradición y cultura españolas</span>
+                    <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 shadow-sm"></span>
+                    <span className="drop-shadow-sm">Tradición y cultura españolas</span>
                   </li>
                 </ul>
               </div>
@@ -138,7 +138,7 @@ export function HeroSection() {
       {/* Scroll Indicator */}
       <button
         onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary hover:text-accent transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white hover:text-accent transition-colors animate-bounce drop-shadow-lg"
         aria-label="Scroll to next section"
       >
         <ChevronDown size={32} />

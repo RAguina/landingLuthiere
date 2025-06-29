@@ -21,20 +21,20 @@ const lora = Lora({
 // 🏆 METADATA GLOBAL - FORTUNE 500 LEVEL
 export const metadata: Metadata = {
   title: {
-    default: 'Luthier de Cuatros | Instrumentos Artesanales',
-    template: '%s | Luthier de Cuatros'
+    default: 'Luthier de Guitarras | Instrumentos Artesanales Españoles',
+    template: '%s | Luthier de Guitarras'
   },
-  description: 'Luthier especializado en cuatros españoles artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
+  description: 'Luthier especializado en guitarras españolas artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
   keywords: [
-    'luthier', 'cuatro español', 'instrumentos artesanales', 
-    'música tradicional', 'cuatro artesanal', 'luthería española',
-    'instrumentos musicales', 'cuatro profesional', 'música folklórica',
-    'artesanía musical', 'maderas selectas', 'tradición musical'
+    'luthier', 'guitarra española', 'instrumentos artesanales', 
+    'música tradicional', 'guitarra artesanal', 'luthería española',
+    'instrumentos musicales', 'guitarra profesional', 'música clásica',
+    'artesanía musical', 'maderas selectas', 'tradición musical', 'guitarra flamenca'
   ],
-  authors: [{ name: 'Luthier de Cuatros' }],
-  creator: 'Luthier de Cuatros',
-  publisher: 'Luthier de Cuatros',
-  applicationName: 'Luthier de Cuatros',
+  authors: [{ name: 'Luthier de Guitarras' }],
+  creator: 'Luthier de Guitarras',
+  publisher: 'Luthier de Guitarras',
+  applicationName: 'Luthier de Guitarras',
   referrer: 'origin-when-cross-origin',
   robots: {
     index: true,
@@ -53,23 +53,23 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: 'https://tudominio.com/',
-    siteName: 'Luthier de Cuatros',
-    title: 'Luthier de Cuatros | Instrumentos Artesanales',
-    description: 'Luthier especializado en cuatros españoles artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas.',
+    siteName: 'Luthier de Guitarras',
+    title: 'Luthier de Guitarras | Instrumentos Artesanales Españoles',
+    description: 'Luthier especializado en guitarras españolas artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas.',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cuatro artesanal - Luthier profesional',
+        alt: 'Guitarra artesanal española - Luthier profesional',
         type: 'image/jpeg',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luthier de Cuatros | Instrumentos Artesanales',
-    description: 'Luthier especializado en cuatros españoles artesanales. Calidad profesional, tradición musical.',
+    title: 'Luthier de Guitarras | Instrumentos Artesanales',
+    description: 'Luthier especializado en guitarras españolas artesanales. Calidad profesional, tradición musical.',
     creator: '@tucuenta',
     site: '@tucuenta',
     images: ['/images/og-image.jpg'],
@@ -78,12 +78,6 @@ export const metadata: Metadata = {
     canonical: 'https://tudominio.com/',
   },
   category: 'music',
-  // 🔧 Verification será añadida cuando tengas el código real
-  // verification: {
-  //   google: 'tu_codigo_google_verificado',
-  //   yandex: 'tu_codigo_yandex',
-  //   'msvalidate.01': 'tu_codigo_bing',
-  // },
 }
 
 // 🔧 VIEWPORT SEPARADO (Next.js 15+ requirement)
@@ -104,23 +98,19 @@ export default function RootLayout({
   children: React.ReactNode 
 }) {
   return (
-    <html lang="es" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="es" className={`${inter.variable} ${lora.variable}`} suppressHydrationWarning>
       <head>
         {/* 🏆 FORTUNE 500: Preconnect for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        
-        {/* 🏆 FORTUNE 500: DNS prefetch for external resources */}
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        
-        {/* 🏆 FORTUNE 500: Structured data will be added here */}
       </head>
       <body className="min-h-screen bg-neutral text-primary antialiased">
         <ThemeProvider 
           attribute="class" 
-          defaultTheme="system" 
-          enableSystem
+          defaultTheme="light"
+          enableSystem={true}
           disableTransitionOnChange={false}
+          storageKey="luthier-theme"
         >
           {/* 🏆 FORTUNE 500: Skip navigation for accessibility */}
           <a href="#main-content" className="skip-link">

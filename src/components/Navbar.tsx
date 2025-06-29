@@ -43,8 +43,8 @@ export function Navbar() {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-neutral/95 backdrop-blur-sm shadow-card border-b border-secondary/10' 
-          : 'bg-transparent'
+          ? 'bg-neutral/95 backdrop-blur-md shadow-lg border-b border-secondary/20' 
+          : 'bg-black/30 backdrop-blur-sm border-b border-white/10'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -52,7 +52,11 @@ export function Navbar() {
           {/* Logo */}
           <Link 
             href="/"
-            className="flex items-center space-x-2 font-serif font-bold text-xl hover:text-accent transition-colors"
+            className={`flex items-center space-x-2 font-serif font-bold text-xl transition-colors ${
+              isScrolled 
+                ? 'text-primary hover:text-accent' 
+                : 'text-white hover:text-accent drop-shadow-lg'
+            }`}
           >
             <Music className="w-6 h-6" />
             <span>Luthier</span>
@@ -64,7 +68,11 @@ export function Navbar() {
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-primary hover:text-accent transition-colors font-medium"
+                className={`font-medium transition-colors ${
+                  isScrolled 
+                    ? 'text-primary hover:text-accent' 
+                    : 'text-white hover:text-accent drop-shadow-md'
+                }`}
               >
                 {item.label}
               </button>
@@ -77,7 +85,11 @@ export function Navbar() {
             <ThemeSwitcher />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-accent transition-colors p-2"
+              className={`p-2 rounded-lg transition-colors ${
+                isScrolled 
+                  ? 'text-primary hover:text-accent hover:bg-secondary/10' 
+                  : 'text-white hover:text-accent hover:bg-white/10 backdrop-blur-sm'
+              }`}
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -87,13 +99,13 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-neutral/95 backdrop-blur-sm border-b border-secondary/10 shadow-lg">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-neutral/95 backdrop-blur-md border-b border-secondary/20 shadow-lg">
             <div className="px-4 py-6 space-y-4">
               {navigation.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="block w-full text-left text-primary hover:text-accent transition-colors font-medium py-2"
+                  className="block w-full text-left text-primary hover:text-accent transition-colors font-medium py-2 px-4 rounded-lg hover:bg-secondary/10"
                 >
                   {item.label}
                 </button>
