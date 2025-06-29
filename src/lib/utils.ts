@@ -243,7 +243,7 @@ export function formatBytes(bytes: number, decimals: number = 2): string {
 }
 
 // Utility para debounce (útil para búsquedas)
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: never[]) => unknown>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {
@@ -256,7 +256,7 @@ export function debounce<T extends (...args: any[]) => any>(
 }
 
 // Utility para throttle (útil para scroll events)
-export function throttle<T extends (...args: any[]) => any>(
+export function throttle<T extends (...args: never[]) => unknown>(
   func: T,
   limit: number
 ): (...args: Parameters<T>) => void {
