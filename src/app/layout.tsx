@@ -21,13 +21,13 @@ const lora = Lora({
 // 🏆 METADATA GLOBAL - FORTUNE 500 LEVEL
 export const metadata: Metadata = {
   title: {
-    default: 'Luthier de Cuatros | Instrumentos Artesanales Venezolanos',
+    default: 'Luthier de Cuatros | Instrumentos Artesanales',
     template: '%s | Luthier de Cuatros'
   },
-  description: 'Luthier especializado en cuatros venezolanos artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
+  description: 'Luthier especializado en cuatros españoles artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
   keywords: [
-    'luthier', 'cuatro venezolano', 'instrumentos artesanales', 
-    'música tradicional', 'cuatro artesanal', 'luthería venezolana',
+    'luthier', 'cuatro español', 'instrumentos artesanales', 
+    'música tradicional', 'cuatro artesanal', 'luthería española',
     'instrumentos musicales', 'cuatro profesional', 'música folklórica',
     'artesanía musical', 'maderas selectas', 'tradición musical'
   ],
@@ -54,14 +54,14 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     url: 'https://tudominio.com/',
     siteName: 'Luthier de Cuatros',
-    title: 'Luthier de Cuatros | Instrumentos Artesanales Venezolanos',
-    description: 'Luthier especializado en cuatros venezolanos artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas.',
+    title: 'Luthier de Cuatros | Instrumentos Artesanales',
+    description: 'Luthier especializado en cuatros españoles artesanales. Instrumentos únicos hechos a mano con maderas seleccionadas.',
     images: [
       {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cuatro artesanal venezolano - Luthier profesional',
+        alt: 'Cuatro artesanal - Luthier profesional',
         type: 'image/jpeg',
       },
     ],
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Luthier de Cuatros | Instrumentos Artesanales',
-    description: 'Luthier especializado en cuatros venezolanos artesanales. Calidad profesional, tradición musical.',
+    description: 'Luthier especializado en cuatros españoles artesanales. Calidad profesional, tradición musical.',
     creator: '@tucuenta',
     site: '@tucuenta',
     images: ['/images/og-image.jpg'],

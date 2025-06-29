@@ -9,7 +9,7 @@ const features = [
   {
     icon: Music,
     title: 'Artesanía Tradicional',
-    description: 'Técnicas ancestrales venezolanas'
+    description: 'Técnicas ancestrales'
   },
   {
     icon: Award,
@@ -66,7 +66,7 @@ export function HeroSection() {
               </h1>
               
               <p className="text-xl lg:text-2xl text-primary/80 max-w-2xl leading-relaxed">
-                Instrumentos únicos creados con técnicas tradicionales venezolanas. 
+                Instrumentos únicos creados con técnicas tradicionales. 
                 Cada cuatro cuenta una historia de pasión y dedicación artesanal.
               </p>
             </div>
@@ -126,7 +126,7 @@ export function HeroSection() {
                   </li>
                   <li className="flex items-start space-x-2">
                     <span className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Tradición y cultura venezolana</span>
+                    <span>Tradición y cultura españolas</span>
                   </li>
                 </ul>
               </div>

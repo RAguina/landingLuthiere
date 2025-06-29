@@ -151,7 +151,7 @@ export function ContactForm() {
               <ContactItem
                 icon={<MapPin className="w-6 h-6" />}
                 title="Ubicación"
-                content="Caracas, Venezuela"
+                content="Barcelona, España"
                 subtitle="Atendemos en todo el país"
               />
               

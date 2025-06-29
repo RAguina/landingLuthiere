@@ -17,23 +17,23 @@ import { LoadingPage } from '@/components/LoadingPage'
 
 // 🏆 METADATA ESPECÍFICO DE LA PÁGINA HOME - FORTUNE 500 LEVEL
 export const metadata: Metadata = {
-  title: 'Inicio | Luthier de Cuatros Venezolanos',
-  description: 'Descubre instrumentos artesanales únicos. Cuatros venezolanos hechos a mano con maderas seleccionadas y técnicas tradicionales. Más de 15 años creando instrumentos de calidad profesional.',
+  title: 'Inicio | Luthier de Cuatros ',
+  description: 'Descubre instrumentos artesanales únicos. Cuatros españoles hechos a mano con maderas seleccionadas y técnicas tradicionales. Más de 15 años creando instrumentos de calidad profesional.',
   keywords: [
-    'luthier cuatro venezolano', 'instrumentos artesanales Venezuela', 
-    'cuatro artesanal', 'música tradicional venezolana', 'luthería profesional',
+    'luthier cuatro español', 'instrumentos artesanales', 
+    'cuatro artesanal', 'música tradicional', 'luthería profesional',
     'cuatro hecho a mano', 'instrumentos musicales artesanales', 'tradición musical',
     'cuatro de concierto', 'maderas seleccionadas', 'artesano luthier'
   ],
   openGraph: {
-    title: 'Luthier de Cuatros - Instrumentos Artesanales Venezolanos',
-    description: 'Descubre cuatros venezolanos únicos, hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
+    title: 'Luthier de Cuatros - Instrumentos Artesanales',
+    description: 'Descubre cuatros españoles únicos, hechos a mano con maderas seleccionadas y técnicas tradicionales. Calidad profesional para músicos exigentes.',
     images: ['/images/hero-cuatro.jpg'],
     url: 'https://tudominio.com/',
   },
   twitter: {
     title: 'Luthier de Cuatros - Instrumentos Artesanales',
-    description: 'Cuatros venezolanos únicos, hechos a mano con maderas seleccionadas. Tradición y calidad profesional.',
+    description: 'Cuatros españoles únicos, hechos a mano con maderas seleccionadas. Tradición y calidad profesional.',
   },
   alternates: {
     canonical: 'https://tudominio.com/',
@@ -45,7 +45,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Luthier de Cuatros",
-  "description": "Luthier especializado en cuatros venezolanos artesanales",
+  "description": "Luthier especializado en cuatros españoles artesanales",
   "url": "https://tudominio.com",
   "telephone": "+58-414-123-4567",
   "address": {

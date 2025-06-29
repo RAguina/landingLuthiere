@@ -59,11 +59,11 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Music className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-serif font-bold">Luthier de Cuatros</span>
+              <span className="text-2xl font-serif font-bold">Luthiere de Cuatros</span>
             </div>
             
             <p className="text-neutral/80 leading-relaxed">
-              Preservando la tradición musical venezolana a través de instrumentos 
+              Preservando la tradición musical a través de instrumentos 
               artesanales únicos, creados con pasión y técnicas ancestrales.
             </p>
 
@@ -168,7 +168,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-neutral/20">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral/60 text-sm">
-              © {currentYear} Luthier de Cuatros. Todos los derechos reservados.
+              © {currentYear} Luthiere Sofia. Todos los derechos reservados.
             </p>
             
             <div className="flex space-x-6 text-sm text-neutral/60">

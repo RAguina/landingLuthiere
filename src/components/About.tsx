@@ -22,7 +22,7 @@ const stats = [
     icon: Users,
     number: '150+',
     label: 'Músicos Satisfechos',
-    description: 'En Venezuela y el mundo'
+    description: 'En España y el mundo'
   },
   {
     icon: Award,
@@ -70,7 +70,7 @@ export function About() {
               <div className="space-y-6 text-lg leading-relaxed text-primary/80">
                 <p>
                   Desde hace más de 15 años, me dedico a preservar y perpetuar el arte 
-                  tradicional de la construcción de cuatros venezolanos. Cada instrumento 
+                  tradicional de la construcción de cuatros españoles. Cada instrumento 
                   que sale de mi taller es resultado de técnicas ancestrales combinadas 
                   con mi pasión por la música folklórica.
                 </p>

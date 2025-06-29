@@ -1,6 +1,6 @@
 # 🎸 Landing Luthiere
 
-Sitio web profesional para luthier especializado en cuatros venezolanos artesanales.
+Sitio web profesional para luthier especializado en cuatros españoles artesanales.
 
 ## 🎯 Características
 
@@ -152,4 +152,4 @@ Este proyecto está bajo licencia privada para uso del cliente.
 
 ---
 
-*Desarrollado con ❤️ para preservar la tradición musical venezolana*
+*Desarrollado con ❤️ para preservar la tradición musical*
