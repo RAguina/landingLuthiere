@@ -1,0 +1,210 @@
+/* GLOBALS.CSS - TAILWIND V4 FORTUNE 500 EDITION
+   Performance, accesibilidad y escalabilidad empresarial
+*/
+
+@import "tailwindcss";
+
+/* =======================
+   THEME: COLORS & FONTS
+   ======================= */
+@theme {
+  --color-primary: #4F3824;
+  --color-secondary: #C2A77C;
+  --color-accent: #6B9080;
+  --color-neutral: #F8F4EF;
+  --color-dark: #22212C;
+
+  /* Font variables conectadas a next/font */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+
+  /* Spacing, radius, shadows, timing, etc. */
+  --spacing-lg: 2rem;
+  --radius-md: 0.75rem;
+  --shadow-card: 0 2px 8px 0 rgba(60, 50, 10, 0.10);
+
+  /* Animations */
+  --transition: 150ms cubic-bezier(.4,0,.2,1);
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme {
+    --color-primary: #E6DAC8;
+    --color-neutral: #1A1917;
+    --color-secondary: #A68D5D;
+  }
+}
+
+.dark {
+  --color-primary: #E6DAC8;
+  --color-neutral: #1A1917;
+  --color-secondary: #A68D5D;
+}
+
+/* ===========================
+   BASE LAYER: RESET & TYPO
+   =========================== */
+@layer base {
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font-sans);
+    background-color: var(--color-neutral);
+    color: var(--color-primary);
+    scroll-behavior: smooth;
+    min-height: 100%;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  #__next, body, #main-content {
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+  }
+  a {
+    color: var(--color-accent);
+    text-underline-offset: 2px;
+    transition: color var(--transition);
+    outline: none;
+  }
+  a:focus-visible, a:hover {
+    color: var(--color-secondary);
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  /* Mejor accesibilidad skip link */
+  .skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--color-accent);
+    color: white;
+    padding: 0.5rem 1rem;
+    transform: translateY(-200%);
+    transition: transform .2s;
+  }
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  /* Sr-only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0);
+    border: 0;
+  }
+}
+
+/* ===========================
+   COMPONENTS LAYER: BUTTONS, CARDS, FORMS
+   =========================== */
+@layer components {
+  .btn {
+    @apply px-5 py-2 rounded-lg font-semibold transition-colors duration-200;
+    background: var(--color-primary);
+    color: var(--color-neutral);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--shadow-card);
+  }
+  .btn:hover, .btn:focus-visible {
+    background: var(--color-secondary);
+    color: var(--color-dark);
+    outline: 2px solid var(--color-accent);
+  }
+  .card {
+    background: var(--color-neutral);
+    color: var(--color-primary);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    padding: 1.5rem;
+  }
+  .form-input {
+    @apply border border-accent bg-neutral rounded-md px-3 py-2 focus:outline-none focus:border-secondary transition;
+    font-family: var(--font-sans);
+  }
+}
+
+/* ===========================
+   UTILITIES LAYER
+   =========================== */
+/* ...tu tailwind.config.js puede mapear las variables automáticamente */
+
+/* ===========================
+   MEDIA/RESPONSIVE
+   =========================== */
+img, picture, video {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================
+   SCROLLBAR
+   =========================== */
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-neutral);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 8px;
+}
+
+/* ===========================
+   ANIMATIONS
+   =========================== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ===========================
+   PRINT STYLES
+   =========================== */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .btn, .card {
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+  }
+  nav, .no-print { display: none !important; }
+}
+
+
+/* ===========================
+   ACCESIBILIDAD AVANZADA
+   =========================== */
+
+/* Reduce motion para usuarios sensibles */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Contrast mode para alto contraste */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #000;
+    --color-neutral: #fff;
+    --color-accent: #0066cc;
+  }
+}

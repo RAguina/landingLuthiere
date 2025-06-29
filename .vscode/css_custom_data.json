@@ -1,0 +1,51 @@
+{
+  "version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@theme",
+      "description": "Tailwind CSS v4 theme configuration"
+    },
+    {
+      "name": "@apply",
+      "description": "Tailwind CSS apply directive"
+    },
+    {
+      "name": "@layer",
+      "description": "Tailwind CSS layer directive"
+    },
+    {
+      "name": "@config",
+      "description": "Tailwind CSS config directive"
+    }
+  ],
+  "properties": [
+    {
+      "name": "--color-primary",
+      "description": "Primary brand color variable"
+    },
+    {
+      "name": "--color-secondary", 
+      "description": "Secondary brand color variable"
+    },
+    {
+      "name": "--color-accent",
+      "description": "Accent color variable"
+    },
+    {
+      "name": "--color-neutral",
+      "description": "Neutral background color variable"
+    },
+    {
+      "name": "--color-dark",
+      "description": "Dark color variable"
+    },
+    {
+      "name": "--font-sans",
+      "description": "Sans-serif font family variable"
+    },
+    {
+      "name": "--font-serif",
+      "description": "Serif font family variable"
+    }
+  ]
+}
