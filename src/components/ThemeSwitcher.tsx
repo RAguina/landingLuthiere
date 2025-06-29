@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { Moon, Sun, Monitor } from 'lucide-react'
 
 export function ThemeSwitcher() {
-  const { theme, setTheme, resolvedTheme, systemTheme } = useTheme()
+  const { theme, setTheme, systemTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   // Evitar hydration mismatch
@@ -48,7 +48,7 @@ export function ThemeSwitcher() {
 
 // Versión con 3 opciones (light/dark/system)
 export function AdvancedThemeSwitcher() {
-  const { theme, setTheme, resolvedTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
